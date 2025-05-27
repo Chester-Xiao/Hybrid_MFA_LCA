@@ -1,0 +1,42 @@
+{
+    "time": {
+      "start": 2026,
+      "end": 2050
+    },
+    "fleet": {
+      "total_buses": 100,
+      "inflow_start": 2026,
+      "inflow_end": 2035,
+      "inflow_mode": "linear"
+    },
+    "battery": {
+      "mass": 5463.864433103488 
+    },
+    "crm": {
+      "elements": ["Li"],
+      "intensities": {
+        "Li": 0.2593
+      }
+    },
+    "lifetime": {
+      "Type": "Weibull",
+      "Shape": 3.5,
+      "Scale": 14
+    },
+    "demand_share": {
+      "BAU":       {"factor": 0.5},
+      "Moderate":  {"factor": 1.2},
+      "Aggressive":{"factor": 1.5}
+    },
+    "eol_recovery_share": {
+      "BAU":       {"base": 65, "rate": 0.5},
+      "Moderate":  {"base": 65, "rate": 1.0},
+      "Aggressive":{"base": 65, "rate": 1.4}
+    },
+    "paths": {
+      "modules": "odym/modules",
+      "data": "data",
+      "results": "results"
+    }
+  }
+  
